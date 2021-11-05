@@ -1,0 +1,87 @@
+/*Font Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@100;300&display=swap');
+
+/*CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #232629;
+    color: #BABFC4;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.header h1{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 0;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav ul li{
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #84909b;
+}
+
+.nav ul li a:hover{
+    color: #0A95FF;
+}
+
+.text-area{
+    width: 100%;
+    background-color: #363636;
+    margin: auto;
+}
+
+.text-area textarea{
+    background-color: #363636;
+    padding: 15px 20px;
+    color: #fff;
+    min-width: 100%;
+    min-height: 500px;
+    border-bottom: 1px solid #232629 !important;
+    -webkit-touch-callout:none;
+}
+
+footer{
+    padding-bottom: 20px;
+    padding-top: 40px;
+    border-top: 1px solid #232629;
+    background-color: #303134;
+}
+
+@media only screen and (max-width: 700px) { 
+    .nav ul{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .nav ul li{
+        padding: 10px;
+        margin: 0;
+    }
+
+    .nav ul li:hover{
+        background-color: #0a95ff54;
+    }
+}
